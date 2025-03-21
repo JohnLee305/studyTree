@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-ZenApplication<zen>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.pomodor.zen.ZenApplication",
+      "projectName": "zen",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}
