@@ -20,6 +20,15 @@ public class TimerController {
     public String hello(@RequestParam(value = "param", required = false, defaultValue = "World") String param,
             Model model) {
         model.addAttribute("param", param);
-        return "hello"; // This will resolve to /WEB-INF/views/hello.js p
+        return "timer/hello"; // This will resolve to /WEB-INF/views/hello.js
+    }
+
+    @GetMapping("timermain.do")
+    public String timerMain(@RequestParam(value = "param", required = false, defaultValue = "World") String param,
+            Model model) {
+        model.addAttribute("WORK_BACKGROUND_IMAGE", "/img/study.gif");
+        model.addAttribute("BREAK_BACKGROUND_IMAGE", "/img/break.jpg");
+        model.addAttribute("param", param);
+        return "timer/timermain";
     }
 }
